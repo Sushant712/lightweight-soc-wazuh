@@ -15,9 +15,10 @@ The Ubuntu virtual machine runs the Wazuh manager, indexer and dashboard. The Wi
 | File | Purpose |
 | --- | --- |
 | `local_rules.xml` | Exported local Wazuh rules, including the supplied example and project custom rules |
-| `soc-dashboard.ndjson` | Exported SOC dashboard and its related saved objects; originally exported as `export.ndjson` |
+| `export.ndjson` | Exported SOC dashboard and related saved objects |
 | `mitre-coverage.json` | Editable MITRE ATT&CK Navigator layer |
 | `README.md` | Project overview and setup instructions |
+| `windows-agent-ossec.conf` | Windows agent settings modified to collect Windows, Sysmon and Windows Defender logs |
 
 The final report contains the screenshots, testing evidence, policy and supporting discussion. This repository contains project configuration exports, rather than the full Wazuh software or virtual machines.
 
@@ -29,7 +30,7 @@ The final report contains the screenshots, testing evidence, policy and supporti
 - Administrator access to configure the lab.
 - A browser to access the Wazuh dashboard.
 
-Use compatible Wazuh component versions. The original Windows agent configuration and Sysmon configuration have not been verified as included in this submission, so these exports alone do not provide a complete copy of the original environment.
+Use compatible Wazuh component versions. The Windows agent configuration is included. An existing third-party Sysmon configuration was used in the lab and is not included in this repository. These files support rebuilding the lab but are not a complete copy of the virtual machines.
 
 ## Setup and use
 
